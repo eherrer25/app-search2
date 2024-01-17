@@ -1,0 +1,176 @@
+/*--------------------------------------------------------------
+# botones Social
+--------------------------------------------------------------*/
+
+.social-facebook {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffff;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    background: #3b5998;
+    padding: 10px 15px;
+  }
+
+  .social-instagram {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffff;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    background: #E4405F;
+    padding: 10px 15px;
+  }
+  .social-facebook:hover,
+  .social-instagram:hover
+   {
+    opacity: 0.8;
+    color: #ffff;
+  }
+
+  
+/* Estilo para el botón "Formulario de Satisfacción" */
+.boton1 {
+  background-color:#F6A613; /* Color de fondo naranja llamativo */
+  color: #fff; /* Color del texto blanco */
+  font-size: 14px;
+  padding: 10px 22px; /* Espaciado interno del botón */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave en hover */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombreado leve */
+}
+
+/* Estilo para el botón "Formulario de Reclamos" */
+.boton2 {
+  background-color:#FFFF; /* Color de fondo naranja llamativo */
+  color: #000000; /* Color del texto blanco */
+  font-size: 14px;
+  padding: 10px 22px; /* Espaciado interno del botón */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave en hover */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombreado leve */
+}
+
+.boton3 {
+  background-color:#3A3A3A; /* Color de fondo naranja llamativo */
+  color: #FFFF; /* Color del texto blanco */
+  font-size: 14px;
+  padding: 10px 22px; /* Espaciado interno del botón */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave en hover */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombreado leve */
+}
+
+/* Efecto hover para los botones */
+.boton1:hover,
+.boton2:hover {
+  background-color: #3c3c3c; /* Color de fondo más oscuro en hover */
+  color: #fff
+}
+
+/* Imagenes métodos de pago*/
+
+.custom-image {
+  max-width: 350px; /* Ancho máximo personalizado */
+  max-height: 200px; /* Altura máxima personalizada */
+  width: auto; /* Para asegurarse de que las imágenes sean responsivas */
+  height: auto; /* Para asegurarse de que las imágenes sean responsivas */
+  margin: 10px; /* Espacio entre las imágenes (ajusta según sea necesario) */
+}
+
+/* Item de new system*/
+.bi-check-icon {
+  color: #F6A613; /* Cambia el color del icono a otro color (en este caso, naranja) */
+  margin-right: 1%;
+}
+
+/* Sales system*/
+.sales{
+  background-color: white; 
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); 
+  padding: 30px; 
+  text-align: center; 
+  margin: 20px; 
+  border-radius: 5px;
+  border-bottom: 3px solid #F6A613;
+}
+
+.levitating-image {
+  animation: levitate 3s ease-in-out infinite; /* Aplica la animación llamada "levitate" */
+}
+
+.card-app{
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-app:hover {
+  background-color: #F6A613;
+  color: #fff; 
+  transform: translateY(-5px); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*New system Section*/
+
+.title-new {
+  font-size: 24px; 
+  color: #333; 
+  font-family: Arial, sans-serif; 
+  background: #FFFF; 
+  padding: 10px 20px; 
+  display: inline-block;
+  border-radius: 10px; 
+  border-bottom: 3PX solid #F6A613;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%); 
+}
+
+.title-new strong {
+  color: #F6A613; /* Color del texto "Nuevo" */
+  
+}
+
+/* Imagen de fondo */
+.sales-system {
+  background-image: url('../img/cobranza/2.png');
+  background-size: cover;
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-color: #f2f2f2; 
+}
+
+
+
+@keyframes levitate {
+  0% {
+      transform: translateY(0); /* Posición inicial */
+  }
+  50% {
+      transform: translateY(-10px); /* Posición elevada */
+  }
+  100% {
+      transform: translateY(0); /* Posición final, vuelve a la posición inicial */
+  }
+}
+
+@media (max-width: 768px) {
+  .d-flex.justify-content-center {
+    flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+
+  .custom-image {
+    max-width: 80%; /* Reducir el ancho máximo al 80% del contenedor */
+    height: auto; /* Para asegurarse de que las imágenes sean responsivas */
+  }
+
+  .img-card{
+    max-width: 40%;
+    height: auto;
+  }
+  .text-card{
+    max-width: 60%;
+  }
+
+}
+
+
